@@ -1,0 +1,13 @@
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+  transition: background-color 0.3s ease;
+}

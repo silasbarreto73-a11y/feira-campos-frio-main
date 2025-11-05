@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Feirante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body class="bg-light">
+
+  <!-- Navbar simples -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">🌽 Feira Livre Campos Frios</a>
+    </div>
+  </nav>
+
+  <!-- Formulário de Cadastro -->
+  <section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-success text-white text-center rounded-top">
+          <h3 class="mb-0">Cadastro de Feirante</h3>
+        </div>
+        <div class="card-body bg-white p-4">
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nome" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="nome" placeholder="Ex: Maria Silva" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="apelido" class="form-label">Nome da banca ou apelido</label>
+                <input type="text" class="form-control" id="apelido" placeholder="Ex: Banca da Maria">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="produtos" class="form-label">Produtos que vende</label>
+              <textarea class="form-control" id="produtos" rows="3" placeholder="Ex: Frutas, verduras, queijos..."></textarea>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="whatsapp" class="form-label">WhatsApp</label>
+                <input type="tel" class="form-control" id="whatsapp" placeholder="(81) 9xxxx-xxxx">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="foto" class="form-label">Foto de perfil</label>
+                <input type="file" class="form-control" id="foto">
+              </div>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="termos" required>
+              <label class="form-check-label" for="termos">Aceito os <a href="#" class="text-success text-decoration-underline">termos de uso</a></label>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 fw-bold">
+              <i class="bi bi-person-plus-fill me-2"></i> Cadastrar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© Projeto comunitário sem fins lucrativos | Campos Frios 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cadastro.js"></script>
+</body>
+</html>
